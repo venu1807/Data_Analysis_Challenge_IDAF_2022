@@ -51,3 +51,16 @@ Two weeks after email. Let me know if you need more time.
 
 - If you have questions regarding the data set for your analysis, write to me at miguel.fernandes@dzne.de
 - Have fun with it and good luck! :)
+
+## Proposed Solution(PCA + KMeans):
+
+- Step-1: Load the data and explore it for cleaning the missing values.
+- Step-2: As the data is high dimensional (10443, 1488), it is required to reduce the dimensionality.
+- Step-3: Used PCA (Principal Component Analysis) to reduce the dimensions to (10443,46) which covers 95% data variability.
+![](notebooks/exploratory/elbow_plot.png)
+![](notebooks/exploratory/pca_95_plot.png)
+![](notebooks/exploratory/pca_bar_plot.png)
+- Step-4: Now, perform clustering on the PCA components using KMeans clustering method from scikit-learn.
+![](notebooks/exploratory/kmeans_elbow_plot.png)
+- Step-5: The above plot shows no variability in inertia after clusters-7. Therefore, I would conclude the optimum number of clusters is 7.
+
