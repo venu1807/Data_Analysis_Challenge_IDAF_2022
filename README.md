@@ -53,8 +53,11 @@ Two weeks after email. Let me know if you need more time.
 - Have fun with it and good luck! :)
 
 ## Proposed Solution(PCA + KMeans):
-
-- Step-1: Load the data and explore it for cleaning the missing values.
+- Step-0: Create conda environment using : 
+ ```
+   conda env create -f environment.yml
+ ```
+- Step-1: Load the raw data and explore it for cleaning the missing values.
 - Step-2: As the data is high dimensional (10443, 1488), it is required to reduce the dimensionality.
 - Step-3: Used PCA (Principal Component Analysis) to reduce the dimensions to (10443,46) which covers 95% data variability.
 ![](notebooks/exploratory/elbow_plot.png)
